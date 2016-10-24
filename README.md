@@ -1,6 +1,5 @@
 #Hackathon Project - Team Pure Cockatoo
-# Fullscreen Form
+# [Fullscreen Form - Demo]((https://toddaustin.github.io/fullscreen-form/))
 
 ## Josh Sadlon & Todd Austin
 
-###[Demo](https://toddaustin.github.io/fullscreen-form/)
