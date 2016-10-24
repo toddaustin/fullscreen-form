@@ -37,9 +37,6 @@
                     document.getElementsByTagName('body')[0].style.color = '#000000';
                     document.getElementsByTagName('textarea')[0].style.color = '#666666';
                     document.getElementsByTagName('textarea')[0].style.fontSize = '1.3rem';
-                    document.getElementsByTagName('header')[0].style.width = '70%';
-                    document.getElementsByTagName('header')[0].style.margin = '0 auto';
-                    document.getElementsByTagName('header')[0].style.maxWidth = '960px';
                     document.getElementsByTagName('h2')[0].textContent = 'Review & Submit';
                     var num = document.getElementsByClassName('num');
 
