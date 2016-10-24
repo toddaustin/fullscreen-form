@@ -43,15 +43,6 @@
         }
     };
 
-// hasClass
-  classit.hasClass = function hasClass(elem, className) {
-    if (elem.classList) {
-        elem.classList.contains(className);
-    } else {
-        new RegExp('(^| )' + className + '( |$)', 'gi').test(elem.className);
-    }
-};
-
 //addClass
 classit.addClass = function addClass(elem, className) {
     //console.log(elem);
@@ -68,23 +59,6 @@ classit.removeClass = function removeClass(elem, className) {
         elem.classList.remove(className);
     } else {
         elem.className = elem.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-    }
-};
-
-// toggleClass
-classit.toggleClass = function toggleClass(elem, className) {
-    if (elem.classList) {
-        elem.classList.toggle(className);
-    } else {
-        var classes = elem.className.split(' ');
-        var existingIndex = classes.indexOf(className);
-
-        if (existingIndex >= 0) {
-            classes.splice(existingIndex, 1);
-        } else {
-            classes.push(className);
-        }
-        elem.className = classes.join(' ');
     }
 };
 
