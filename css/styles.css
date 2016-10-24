@@ -129,7 +129,7 @@ input:focus::-webkit-input-placeholder
 
 ol span {
     display: inline-block;
-    margin: 25px;
+    margin: 5% 12.75% 0 0;
     text-align: center;
     width: 20%;
 }
