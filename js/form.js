@@ -41,7 +41,7 @@
                     document.getElementsByTagName('header')[0].style.margin = '0 auto';
                     document.getElementsByTagName('header')[0].style.maxWidth = '960px';
                     document.getElementsByTagName('h2')[0].style.margin = 'initial';
-               
+                    document.getElementsByTagName('h2')[0].textContent = 'Review & Submit';
                     var num = document.getElementsByClassName('num');
 
                     var footer = document.getElementsByClassName('footer');
