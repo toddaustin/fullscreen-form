@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hackathon Fullscreen Form!</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Project Worksheet</h2><h2 class="num"><span id="count">1</span>/<span id="total">6</span></h2>
+        </header>
+        
+        <form id="myForm" autocomplete="off">
+            <ol>
+                <li>
+                    <label>What's your name?</label>
+                    <input type="text" id="name" placeholder="Chewbacca" required>
+                </li>
+                <li>
+                    <label data-info="We won't send you spam, we promise...">What's your email address?</label>
+                    <input type="email" placeholder="chewbacca@alliance.com" required>
+                </li>
+                <li>
+                    <label data-info="This will help us know what kind of service you need">Whats your priority for your new website?</label>
+                    <div class="radio-group">
+                        <span><input type="radio" id="q3a" name="q3" ><label for="q3a" class="radio-conversion">Sell Things</label></span>
+                        <span><input type="radio" id="q3b" name="q3"><label for="q3b" class="radio-social">Become famous</label></span>
+                        <span><input type="radio" id="q3c" name="q3"><label for="q3c" class="radio-mobile">Mobile market</label></span>
+                    </div>
+                </li>
+                <li>
+                    <label data-info="We'll make sure to use it all over">Choose a color for your website</label>
+                    <select class="cs-select" name="" id="">
+                        <option value="" disabled selected>Pick a color</option>
+                        <option value="#588c75" data-class="color-588c75">#588c75</option>
+                        <option value="#b0c47f" data-class="color-b0c47f">#b0c47f</option>
+                        <option value="#f3e395" data-class="color-f3e395">#f3e395</option>
+                        <option value="#f3ae73" data-class="color-f3ae73">#f3ae73</option>
+                        <option value="#da645a" data-class="color-da645a">#da645a</option>
+                        <option value="#79a38f" data-class="color-79a38f">#79a38f</option>
+                        <option value="#c1d099" data-class="color-c1d099">#c1d099</option>
+                        <option value="#f5eaaa" data-class="color-f5eaaa">#f5eaaa</option>
+                        <option value="#f5be8f" data-class="color-f5be8f">#f5be8f</option>
+                        <option value="#e1837b" data-class="color-e1837b">#e1837b</option>
+                        <option value="#9bbaab" data-class="color-9bbaab">#9bbaab</option>
+                        <option value="#d1dcb2" data-class="color-d1dcb2">#d1dcb2</option>
+                        <option value="#f9eec0" data-class="color-f9eec0">#f9eec0</option>
+                        <option value="#f7cda9" data-class="color-f7cda9">#f7cda9</option>
+                        <option value="#e8a19b" data-class="color-e8a19b">#e8a19b</option>
+                        <option value="#bdd1c8" data-class="color-bdd1c8">#bdd1c8</option>
+                        <option value="#e1e7cd" data-class="color-e1e7cd">#e1e7cd</option>
+                        <option value="#faf4d4" data-class="color-faf4d4">#faf4d4</option>
+                        <option value="#fbdfc9" data-class="color-fbdfc9">#fbdfc9</option>
+                        <option value="#f1c1bd" data-class="color-f1c1bd">#f1c1bd</option>
+                    </select>
+                </li>
+                <li>
+                    <label>Describe how you imagine your new website</label>
+                    <textarea></textarea>
+                </li>
+                <li>
+                    <label>Whats your budget?</label>
+                    <input type="number" step="100" min="100" placeholder="1000">
+                </li>
+            </ol>
+            <div class="footer">
+                <button class="hidden">Send answers</button>
+                <button id="continue">Continue</button>
+            </div>
+        </form>
+        <div class="nav-dots">
+           <button id="active" value="0"></button>
+           <button disabled value="1"></button>
+           <button disabled value="2"></button>
+           <button disabled value="3"></button>
+           <button disabled value="4"></button>
+           <button disabled value="5"></button>
+        </div>
+    </div>
+  <!--   <script>
+        // document.getElementById("name").addEventListener("click",classit.addClass(this,"test"));
+    </script> -->
+
+    <script src="js/classit.js"></script>  
+    <script src="js/form.js"></script>
+</body>
+</html>
